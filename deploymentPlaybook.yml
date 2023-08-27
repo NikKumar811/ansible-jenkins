@@ -1,16 +1,5 @@
 - hosts: nodes
   tasks:
   - name: install maven package
-    package:
-      name: maven
-      state: present
-
-  - name: install docker
-    package:
-      name: docker-ce
-      state: present
-
-  - name: start docker service
-    service:
-      name: docker
-      state: started
+    debug:
+       msg: "Maven installed"
